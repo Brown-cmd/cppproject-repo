@@ -15,3 +15,18 @@ data type, function, parameters
 
 return(r);    
 } (closing brace)
+
+a function may have a return type 
+a function has parameters
+a function has unique name/identifiers
+
+funtions take a divide-and-conquer approach
+they make the program easy to debug and maintain
+
+# VOID functions
+void functions do not have a return type
+# void format
+void outputstatement()
+ {
+    cout << "I am enjoying c++";
+ }
