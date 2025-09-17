@@ -30,3 +30,11 @@ void outputstatement()
  {
     cout << "I am enjoying c++";
  }
+
+ a function prototype is a functiojn declaration taht provides information about a function's name, return type and parameter list
+ e.g.
+
+ double addition(double a, double b)
+{
+    return(a+b);
+}
