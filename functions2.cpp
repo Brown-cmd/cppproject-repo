@@ -1,6 +1,15 @@
 #include <iostream>
 using namespace std;
 
+double addition(double a, double b)
+{
+    return(a+b);
+}
+double subtraction(double a, double b)
+    {
+        return(a-b);
+    }
+
 double addition(double a, double b);
 double subtraction(double a, double b);
 int main ()
@@ -16,11 +25,3 @@ int main ()
     cout << x << " + " << y << " = " << result << endl;
     cout << x << " - " << y << " = " << result2;
 }
-double addition(double a, double b)
-{
-    return(a+b);
-}
-double subtraction(double a, double b)
-    {
-        return(a-b);
-    }
