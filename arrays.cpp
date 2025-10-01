@@ -11,7 +11,7 @@ int main ()
         {
             /* code */
             cout << "ENter exam mark: ";
-            cin >> marks[i];uwongo
+            cin >> marks[i];
             sum = sum + marks[i];
         }
          for (int i = 0; i < 5; i++)

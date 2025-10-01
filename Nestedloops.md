@@ -11,5 +11,5 @@ j will then be increased by one and i x j printed until the condition(j<6) is in
 
 i, in the outer loop, is then increased by 1
 j is then reset to 1 
-the condition for the outer looop(i<6) is then tested, if that is true, move into the inner loop 
+the condition for the outer loop(i<6) is then tested, if that is true, move into the inner loop 
 the process continues as j is increased by 1 in the inner loop and i is increased by 1 in the outer loop

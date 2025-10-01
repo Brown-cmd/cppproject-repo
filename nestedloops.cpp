@@ -20,5 +20,6 @@ int main ()
         int j = 1;
         cout << "\n" << endl;
     }
+    return 0;
     
 }

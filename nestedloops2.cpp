@@ -3,15 +3,24 @@ using namespace std;
 
 int main ()
 {
+    int i,j;
+    cout << "Enter rows: ";
+    cin >> i;
     
-
-    for (int l = 1; l <= 8; l++)
+    
+    for (int m = 1; m <= i; m++)
     {
         /* code */
-        for (int m = l; m <= 8; m++)
+        for (int l = 1; l <= i - m; l++)
         {
-            cout << m << "  "; 
+            cout << " "; 
         }
+        for (int n = 1; n <= 2 * m-1; n++)
+        {
+            /* code */
+            cout << "*";
+        }
+        
         cout << "\n";
         
     }

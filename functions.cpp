@@ -182,7 +182,7 @@ int main()
     calculatehouseallowance(basic_salary);
     calculatehardshipallowance(basic_salary);
     calculategrosssalary(transallowance, houseallowance, hardshipallowance, basic_salary);
-    calculatetax(basic_salary);  // Note: Tax should probably be calculated on gross salary, not basic
+    calculatetax(basic_salary); 
     calculatenetsalary(gross_salary, tax);
     
     output();
