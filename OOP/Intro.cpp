@@ -1,11 +1,12 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 class student
     {
         public:
 
-        int id;
+        int adm;
         string name;
         int exam1;
         int exam2;
@@ -17,22 +18,57 @@ class student
 
 int main ()
 {
-    class student s[5];
+    int n;
+    class student s[80];     //an array object of type class student
+    cout << "Number of students(max 80): ";
+    cin >> n;
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < n; i++)
     {
         
-        cout << "Enter student ID: ";
-        cin >> s[i].id;
+        cout << "Enter student admission no. : ";
+        cin >> s[i].adm;
         cout << "Enter student name: ";
         cin >> s[i].name;
+        cout << "Enter Exam 1 results: ";
+        cin >> s[i].exam1;
+        cout << "Enter Exam 2 results: ";
+        cin >> s[i].exam2;
+
+        s[i].total= s[i].exam1 +  s[i].exam2;
+        s[i].avg = s[i].total/2;
+
+        if (s[i].avg < 40)
+        {
+            s[i].grade = 'F';
+        }
+        else if (s[i].avg < 50)
+        {
+            s[i].grade = 'D';
+        }
+        else if (s[i].avg < 60)
+        {
+            s[i].grade = 'C';
+        }
+        else if (s[i].avg < 70)
+        {
+            s[i].grade = 'B';
+        }
+        else
+        {
+            s[i].grade = 'A';
+        }
         
     }
     
-    for (int i = 0; i < 5; i++)
+    cout << "================================================================="<<endl;
+    cout << "Adm no.    " << "name      " << "exam 1    " << "Exam 2    " << "total    " << "Average    " << "Grade" << endl;
+    cout << "================================================================="<<endl;
+    for (int i = 0; i < n; i++)
     {
         /* code */
-    cout << s[i].id << "     " << s[i].name << endl;
+        
+    cout << s[i].adm << setw(10) << s[i].name << setw(10) << s[i].exam1 << setw(10) << s[i].exam2 << setw(10) << s[i].total << setw(10) << s[i].avg << setw(10) << s[i].grade<< endl;
     }
 
     return 0;
